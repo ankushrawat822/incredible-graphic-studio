@@ -1,9 +1,54 @@
-import React , {useState} from 'react'
+import React , {useState , useRef} from 'react'
 import logo from './assets/logo.svg'
 import {Link} from 'react-router-dom'
 import {GiHamburgerMenu} from 'react-icons/gi'
+import * as Scroll from 'react-scroll';
+
 
 const Navbar = () => {
+
+    // scroll into starts
+  
+    const scroller = Scroll.scroller;
+
+  const scrollToGallery = () => {
+    scroller.scrollTo('galleryRef', {
+      duration: 100,
+      delay: 0,
+      smooth: true,
+      offset: 50
+    });
+  };
+
+  const scrollToServices = () => {
+    scroller.scrollTo('ServicesRef', {
+      duration: 100,
+      delay: 0,
+      smooth: true,
+      offset: 50
+    });
+  };
+
+  const scrollToTestimonial = () => {
+    scroller.scrollTo('TestimonialRef', {
+      duration: 100,
+      delay: 0,
+      smooth: true,
+      offset: -200
+    });
+  };
+
+  const scrollToContact = () => {
+    scroller.scrollTo('ContactRef', {
+      duration: 100,
+      delay: 0,
+      smooth: true,
+      offset: 50
+    });
+  };
+
+
+    // scroll into ends
 
    const [showMenu , setShowMenu] = useState(false)
 
@@ -23,6 +68,15 @@ const Navbar = () => {
 //  hidding mobile nav div on click any btn
 const handleAllMobileToCloseDiv = () =>{
      setShowMenu(prev => !prev)
+
+     if(document.body.classList.contains('fixed-body-class')){
+        document.body.classList.remove('fixed-body-class');
+        console.log("removed")
+    } else {
+        document.body.classList.add('fixed-body-class');
+        console.log('added')
+    }
+
 }
 
   return (
@@ -39,10 +93,10 @@ const handleAllMobileToCloseDiv = () =>{
 
         <div className='hidden md:flex '>
             <ul className='flex items-center justify-center gap-7'>
-                <li>Gallery</li>
-                <li>Services</li>
-                <li>Contact Us</li>
-                <li><Link to="/about">About Us</Link> </li>
+                <li ><Link to='/' onClick={scrollToGallery}>Gallery</Link> </li>
+                <li ><Link to='/' onClick={scrollToServices}>Services</Link></li>
+                <li ><Link to='/' onClick={scrollToContact}>Contact Us</Link></li>
+                <li><Link to="/" onClick={scrollToTestimonial}>Testimonial</Link> </li>
             </ul>
         </div>
 
@@ -51,11 +105,11 @@ const handleAllMobileToCloseDiv = () =>{
       
     </div>
       {/* mobile links starts  */}
-     { showMenu && <div className='absolute w-screen  h-screen flex flex-col items-center pt-[100px] bg-[#ffffff]'>
+     { showMenu && <div className='absolute w-[100vw]  h-screen flex flex-col items-center pt-[100px] bg-[#ffffff] '>
             <ul className='flex flex-col leading-relaxed text-[34px]  font-bold items-center justify-center gap-12'>
-                <li onClick={handleAllMobileToCloseDiv} className=' hover:text-gray-400 cursor-pointer'>Gallery</li>
-                <li onClick={handleAllMobileToCloseDiv} className=' hover:text-gray-400 cursor-pointer'>Services</li>
-                <li onClick={handleAllMobileToCloseDiv} className=' hover:text-gray-400 cursor-pointer'>Contact Us</li>
+                <li onClick={handleAllMobileToCloseDiv} className=' hover:text-gray-400 cursor-pointer'><Link to='/' onClick={scrollToGallery}>Gallery</Link> </li>
+                <li onClick={handleAllMobileToCloseDiv} className=' hover:text-gray-400 cursor-pointer'><Link to='/' onClick={scrollToServices}>Services</Link></li>
+                <li onClick={handleAllMobileToCloseDiv} className=' hover:text-gray-400 cursor-pointer'><Link to='/' onClick={scrollToContact}>Contact Us</Link></li>
                 <li><Link onClick={handleAllMobileToCloseDiv} to="/about" className='cursor-pointer hover:text-gray-400 '>About Us</Link> </li>
             </ul>
         </div> }

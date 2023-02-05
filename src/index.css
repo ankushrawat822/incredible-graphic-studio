@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -32,6 +36,14 @@ box-shadow: 0px 19px 32px rgba(0, 0, 0, 0.15);
 backdrop-filter: blur(24px);
 }
 
+.footer-company-red-line{
+
+  width: 120px;
+  height: 5px;
+  background: #FF0000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  }
 
 .home-hero-red-line{
 width: 160px;
@@ -40,6 +52,14 @@ background: #FF0000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 2px;
 }
+
+.footer-form-red-line{
+  width: 230px;
+  height: 5px;
+  background: #FF0000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  }
 
 .home-hero-join-us-btn{
   width: 164px;
@@ -100,7 +120,7 @@ box-shadow: 0px 4px 13px 7px rgba(0, 0, 0, 0.25);
 
 .services-ul li{
 list-style-type: disc;
-font-weight: bold;
+
 }
 
 .services-know-more-btn{
@@ -137,8 +157,48 @@ box-shadow: -28px 56px 23px 66px rgba(0, 0, 0, 0.25);
     font-size: 17px;
 }
 
+.testimonial-bg-img{
+  background-image: url('./assets/testimonial-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.input-field{
+  background: #FFFFFF;
+box-shadow: 3px 3px 24px 4px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+padding : 3px 5px;
+
+}
+
+.footer-clear-btn{
+  width: 225px;
+height: 54px;
+color: white;
+background: red;
+border-radius: 8px;
+}
+
+.footer-submil-btn{
+  width: 152px;
+height: 54px;
+background: black;
+color : white;
+border-radius: 8px;
+}
+
+
 .gallery-img-hover:hover{
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.gallery-red-img-hover:hover{
+  box-shadow: rgba(255, 0, 0, 0.827) 0px 22px 70px 4px;
+}
+
+.gallery-orange-img-hover:hover{
+  box-shadow: rgba(255, 145, 0, 0.827) 0px 22px 70px 4px;
 }
 
 .services-card-hover:hover{
@@ -146,6 +206,12 @@ box-shadow: -28px 56px 23px 66px rgba(0, 0, 0, 0.25);
 }
 
 
+
+.mobile-nav-transition{
+transform: translateX(10%);
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
 /*  media querries */
 /* @media only screen and (min-width: 300px) {
  

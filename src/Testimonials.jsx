@@ -75,15 +75,15 @@ const Testimonials = () => {
     <>
         <div className='lg:mr-[6rem] lg:pl-20 md:px-10 lg:px-20 p-3'>
      {/* heading div */}
- <div className='flex flex-col items-center justify-center mt-20 pb-32'>
+ <div className='flex flex-col items-center justify-center mt-20 pb-10'>
      <h1 className='font-bold text-[40px] ' >Testimonials</h1>
-     <p className='text-[20px] font-bold'>Reviews from our Clients</p>
+     <p className='text-[20px] '>Reviews from our Clients</p>
  </div>
 
 
     {/* cards div starts  */}
-    <div className='flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-between gap-10 lg:gap-2'>
-     { data.map((item) => (   <div className=' flex flex-col w-[325px] testimonial-card-box-shadow'>
+    <div id='TestimonialRef' className='testimonial-bg-img  z-10 py-16 flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-between gap-10 lg:gap-2 '>
+     { data.map((item) => (   <div className=' z-0 flex flex-col w-[325px] testimonial-card-box-shadow'>
             {/* upper black div */}
           <div className='relative  flex items-center justify-center bg-black ml-[70px] pt-3   h-[135px]'>
                 <img  className='absolute mr-[0px] left-[-49px]' src={item.img} alt="" />
