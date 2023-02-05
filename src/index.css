@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 , p , span {
+  color: #363636;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+.gg{
+  border: 2px solid green;
+}
+
+.bb{
+  border: 2px solid blue;
+}
+
+
+.navbar-drop-shadow{
+  background: #FFFFFF;
+box-shadow: 0px 19px 32px rgba(0, 0, 0, 0.15);
+backdrop-filter: blur(24px);
+}
+
+
+.home-hero-red-line{
+width: 160px;
+height: 5px;
+background: #FF0000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
+}
+
+.home-hero-join-us-btn{
+  width: 164px;
+height: 63px;
+background-color: #FF0000;
+border-radius: 17px;
+color: white;
+font-weight: bold;
+}
+
+.home-hero-contact-us-btn{
+  width: 276.55px;
+height: 63px;
+background: #FFFFFF;
+color: black;
+font-weight: bold;
+border-radius: 10px;
+box-shadow: 0px 19px 32px rgba(0, 0, 0, 0.15);
+backdrop-filter: blur(24px);
+}
+
+.home-hero-explore-more-btn{
+  width: 276.55px;
+height: 63px;
+background: #000000;
+border: 2px solid black;
+color: white;
+font-weight: bold;
+border-radius: 10px;
+box-shadow: 0px 19px 32px rgba(0, 0, 0, 0.15);
+backdrop-filter: blur(24px);
+}
+
+
+.home-hero-ul li{
+list-style-type: disc;
+}
+
+
+/* gallery img size  */
+
+
+/* services */
+.services-card-box-shadow{
+  background: #FFFFFF;
+box-shadow: 0px 4px 13px 7px rgba(0, 0, 0, 0.25);
+}
+
+.services-card-heading{
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+
+.services-ul li{
+list-style-type: disc;
+font-weight: bold;
+}
+
+.services-know-more-btn{
+  width: 227.2px;
+height: 63px;
+color : white;
+background-color: #363636;
+font-size: 24px;
+border-radius: 8px;
+}
+
+.fixed-body-class{
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+
+.testimonial-card-box-shadow{
+  /* Home Page */
+
+background: #FFFFFF;
+box-shadow: -8px 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+.footer-box-shadow{
+  background: #FFFFFF;
+box-shadow: -28px 56px 23px 66px rgba(0, 0, 0, 0.25);
+}
+
+
+.footer-ul li{
+    padding: 7px 0px;
+    font-size: 17px;
+}
+
+.gallery-img-hover:hover{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.services-card-hover:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+/*  media querries */
+/* @media only screen and (min-width: 300px) {
+ 
+}
+
+
+@media only screen and (min-width: 600px) {
+ 
+} */
+
+
+@media only screen and (max-width: 1180px) {
+    .gallery-mid-img{
+      display: none !important;
+    }
+}
