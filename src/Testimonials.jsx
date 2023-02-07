@@ -6,8 +6,8 @@ const Testimonials = () => {
 
  const data = [
   {
-    name : "OLIVIA",
-    role : "Full Stack Web Developer",
+    name : "abc",
+    role : " Stack Web Developer",
     img : "./testimonialImg1.svg",
     text : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. ",
     star : [ 
@@ -26,6 +26,7 @@ const Testimonials = () => {
     ]
 
   },
+ 
   {
     name : "OLIVIA",
     role : "Full Stack Web Developer",
@@ -82,13 +83,13 @@ const Testimonials = () => {
 
 
     {/* cards div starts  */}
-    <div id='TestimonialRef' className='testimonial-bg-img  z-10 py-16 flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-between gap-10 lg:gap-2 '>
+    <div id='TestimonialRef' className='testimonial-bg-img  z-10 py-16 lg:pb-52 flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-between gap-10 lg:gap-2 '>
      { data.map((item) => (   <div className=' z-0 flex flex-col w-[325px] testimonial-card-box-shadow'>
             {/* upper black div */}
           <div className='relative  flex items-center justify-center bg-black ml-[70px] pt-3   h-[135px]'>
                 <img  className='absolute mr-[0px] left-[-49px]' src={item.img} alt="" />
               {/* text */}
-              <div className='absolute right-0 bg-black flex flex-col items-center justify-start  gap-5 w-[150px]'>
+              <div className='absolute right-0 bg-black flex flex-col items-start justify-start  gap-5 w-[150px]'>
                 <p className='bg-white px-2 py-1 mr-5 font-bold'>{item.name} </p>
                 <p className='text-white px-2'>{item.role}</p>
               </div>
@@ -99,7 +100,7 @@ const Testimonials = () => {
               <div className='flex items-start justify-center gap-1 pb-4'>
 
               {  item.star.map((s)=>(
-                 <img src={starImg} alt="" />
+                 <img className='py-4' src={starImg} alt="" />
                         
                  ))    }
               

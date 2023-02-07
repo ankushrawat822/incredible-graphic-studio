@@ -39,7 +39,7 @@ const Test = () => {
                     {/* img div */}
                     <div className='flex flex-col items-center justify-center gap-4'>
                     <img src={HomeHeroIMg} alt="" />
-                    <button className='home-hero-join-us-btn ml-8'> <a href="https://forms.gle/HuXYnUNEWUwXs26h8"> JOIN US</a></button>
+                    <button className='home-hero-join-us-btn ml-8'> <a href="mailto:officialigsbusiness@gmail.com">JOIN US</a></button>
                     </div>
                     {/* ul div */}
                     <div className='text-[24px] mt-5 p-3'>

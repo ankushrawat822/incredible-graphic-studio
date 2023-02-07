@@ -96,7 +96,7 @@ const handleAllMobileToCloseDiv = () =>{
                 <li ><Link to='/' onClick={scrollToGallery}>Gallery</Link> </li>
                 <li ><Link to='/' onClick={scrollToServices}>Services</Link></li>
                 <li ><Link to='/' onClick={scrollToContact}>Contact Us</Link></li>
-                <li><Link to="/" onClick={scrollToTestimonial}>Testimonial</Link> </li>
+                <li><Link to="/about" >About Us</Link> </li>
             </ul>
         </div>
 
@@ -105,8 +105,8 @@ const handleAllMobileToCloseDiv = () =>{
       
     </div>
       {/* mobile links starts  */}
-     { showMenu && <div className='absolute w-[100vw]  h-screen flex flex-col items-center pt-[100px] bg-[#ffffff] '>
-            <ul className='flex flex-col leading-relaxed text-[34px]  font-bold items-center justify-center gap-12'>
+     { showMenu && <div className='absolute w-[100vw] mobile-nav-styles  h-screen flex flex-col items-center pt-[100px] bg-[#ffffff] '>
+            <ul className='flex flex-col leading-relaxed text-[34px]  font-bold items-start justify-center gap-12'>
                 <li onClick={handleAllMobileToCloseDiv} className=' hover:text-gray-400 cursor-pointer'><Link to='/' onClick={scrollToGallery}>Gallery</Link> </li>
                 <li onClick={handleAllMobileToCloseDiv} className=' hover:text-gray-400 cursor-pointer'><Link to='/' onClick={scrollToServices}>Services</Link></li>
                 <li onClick={handleAllMobileToCloseDiv} className=' hover:text-gray-400 cursor-pointer'><Link to='/' onClick={scrollToContact}>Contact Us</Link></li>
