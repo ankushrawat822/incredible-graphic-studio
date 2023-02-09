@@ -62,7 +62,7 @@ border-radius: 2px;
   }
 
 .home-hero-join-us-btn{
-  width: 164px;
+ 
 height: 63px;
 background-color: #FF0000;
 border-radius: 7px;
@@ -183,7 +183,7 @@ padding : 3px 5px;
 }
 
 .footer-clear-btn{
-  width: 225px;
+ 
 height: 54px;
 color: white;
 background: red;
@@ -191,7 +191,7 @@ border-radius: 7px;
 }
 
 .footer-submil-btn{
-  width: 152px;
+
 height: 54px;
 background: black;
 color : white;
@@ -225,10 +225,29 @@ transform: translateX(10%);
   transition-duration: 3s;
   transition-timing-function: ease-in-out;
 }
+
+
+
+.footer-copyright-p{
+  border: 2px solid rgba(0, 0, 0, 0.548);
+    width: 100vw;
+    border-bottom: none;
+    padding-top: 10px;
+    color: black;
+}
+
+.footer-h1-heading{
+  margin-bottom: -17px;
+  margin-top: -9px;
+}
+
+
 /*  media querries */
 /* @media only screen and (min-width: 300px) {
  
 }
+
+.
 
 
  */

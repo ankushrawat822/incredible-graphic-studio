@@ -74,9 +74,9 @@ const Testimonials = () => {
 
   return (
     <>
-        <div className='lg:mr-[6rem] lg:pl-20 md:px-10 lg:px-20 p-3'>
+        <div className='lg:mr-[6rem] lg:pl-20 md:px-10 lg:px-20 p-3 mt-[-61px] md:mt-0'>
      {/* heading div */}
- <div className='flex flex-col items-center justify-center mt-20 pb-10'>
+ <div className='flex flex-col items-center justify-center mt-20 pb-0 md:pb-10'>
      <h1 className='font-bold text-[40px] ' >Testimonials</h1>
      <p className='text-[20px] '>Reviews from our Clients</p>
  </div>
@@ -111,7 +111,7 @@ const Testimonials = () => {
         </div>
 
 
-        <div className='mt-[200px]'>
+        <div className='mt-[92px]'>
 
         </div>
     </>

@@ -59,14 +59,14 @@ const Footer = () => {
   return (
     <>
       {/* main div */}
-      <div id="ContactRef" className='flex flex-col mt-[-100px] flex-wrap md:flex-row items-center justify-start md:items-start md:justify-evenly footer-box-shadow p-5 sm:items-center sm:justify-center pt-[24px]'>
+      <div id="ContactRef" className='flex flex-col mt-[-100px] flex-wrap md:flex-row items-center justify-start md:items-start md:justify-evenly footer-box-shadow p-5 sm:items-center sm:justify-center pt-[24px] gap-5'>
         {/* div 1 */}
         <div className='lg:w-[290px] lg:mr-32 py-5  flex flex-col items-center justify-start sm:items-center sm:justify-center md:items-start md:justify-start sm:gap-2 md:gap-2'>
           <img className='w-[173px] h-[47px] md:ml-[-31px]' src={logo} alt="" />
-          <h1 className='font-bold text-[20px] md:text-[19px] lg:text-[20px] py-2'>INCREDIBLE GRAPHIX STUDIO</h1>
+          <h1 className='font-bold text-[20px] md:text-[19px] lg:text-[20px] py-2 footer-h1-heading'>INCREDIBLE GRAPHIX STUDIO</h1>
           <p className='text-[19px]'>Be Incredible!</p>
           <div className='home-hero-red-line mb-2'></div>
-          <p>Graphic Design Service Based Company</p>
+          <p className='text-[16px]'>Graphic Design Service Based Company</p>
 
 
           <div className='flex items-center justify-start gap-3  py-3'>
@@ -74,13 +74,13 @@ const Footer = () => {
             <a className='footer-icon-hover' href="https://www.behance.net/igraphixstudio/projects"><img src={behanceImg} alt="" /></a>
             <a className='footer-icon-hover' href="https://dribbble.com/incrediblegraphixstudio"> <img src={ballImg} alt="" /></a>
             <a className='footer-icon-hover' href="https://twitter.com/incrediblegs"> <img src={twitterImg} alt="" /></a>
-            <a className='footer-icon-hover' href="#"> <img src={linkedin} alt="" /></a>
+            <a className='footer-icon-hover' href="https://www.linkedin.com/company/incredible-graphix-studio/"> <img src={linkedin} alt="" /></a>
             {/* <img src={whatsappImg} alt="" /> */}
           </div>
 
         </div>
         {/* div 2 */}
-        <div className='lg:w-[280px] flex flex-col items-center justify-start sm:items-center sm:justify-center md:items-start md:justify-start py-10 sm:py-0'>
+        <div className='lg:w-[280px] flex flex-col items-center justify-start sm:items-center sm:justify-center md:items-start md:justify-start  sm:py-0'>
           <p className='text-[22px]'>Company</p>
           <div className='footer-company-red-line mb-2'></div>
 
@@ -110,9 +110,9 @@ const Footer = () => {
             <option value="audi">Audi</option>
           </select>
 
-          <div className='flex flex-col sm:flex-row items-center justify-center gap-5 mt-3 '>
-            <button className=' flex items-center justify-center footer-clear-btn text-[20px]'>Clear All</button>
-            <button onClick={handleSubmitBtn} className=' flex items-center justify-center footer-submil-btn text-[20px]'>Submit</button>
+          <div className='flex flex-col sm:flex-row items-center justify-center gap-2 mt-3 mb-[20px] md:mb-0'>
+            <button className=' flex items-center justify-center footer-clear-btn text-[20px] w-[80vw] sm:w-[225px]'>Clear All</button>
+            <button onClick={handleSubmitBtn} className=' flex items-center justify-center footer-submil-btn text-[20px] w-[80vw] sm:w-[165px]'>Submit</button>
           </div>
 
         </div>
@@ -124,9 +124,9 @@ const Footer = () => {
       </div>
 
 
-      <div className='w-screen bg-white text-center flex flex-col items-center justify-center sm:flex-row  sm:justify-center  py-10'>
+      <div className='w-screen bg-white text-center flex flex-col items-center justify-center sm:flex-row  sm:justify-center  py-3 mt-[-39px]'>
 
-         <p className='text-center sm:mr-[5rem]'>Copyright &#169; 2023  Incredible Graphix Studio. </p>
+         <p className='footer-copyright-p  text-center sm:pr-[5rem]'>Copyright &#169; 2023  Incredible Graphix Studio. </p>
       </div>
   
 

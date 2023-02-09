@@ -39,12 +39,12 @@ const Test = () => {
                     {/* img div */}
                     <div className='flex flex-col items-center justify-center gap-4'>
                     <img src={HomeHeroIMg} alt="" />
-                    <button className='home-hero-join-us-btn ml-8'> <a href="mailto:officialigsbusiness@gmail.com">JOIN US</a></button>
+                    <button className='home-hero-join-us-btn ml-0 sm:ml-8 w-[276.5px] sm:w-[164px]'> <a href="mailto:officialigsbusiness@gmail.com">JOIN US</a></button>
                     </div>
                     {/* ul div */}
                     <div className='text-[24px] mt-5 p-3'>
                     <div className='md:flex flex-col  items-start justify-start mt-[20px] hidden'>
-                    <h1 className='font-bold text-[34px]'>INCREDIBLE GRAPHIX STUDIO</h1>
+                    <h1 className='font-bold text-[34px] mb-[-10px]'>INCREDIBLE GRAPHIX STUDIO</h1>
                     <p className='text-[22px]'>Be Incredible!</p>
                     <div className='home-hero-red-line'></div>
                 </div>
