@@ -147,10 +147,10 @@ const focusPoint = useRef(null);
                 <p className='text-[20px]'>Here's what we offer</p>
             </div>
 
-            <div className='relative flex '>
+            {/* <div className='relative flex '>
                 <img className='absolute z-10 left-0 top-[199px]' onClick={handleLeftArrowClick} src={LeftBtn} alt="" />
                 <img className='absolute z-10 right-0 lg:right-0 top-[199px]' onClick={handleRightArrowClick} src={RightBtn} alt="" />
-             </div>
+             </div> */}
 
             {/* carousal starts */}
             <div ref={focusPoint} className='relative flex md:items-center md:justify-center lg:justify-between services-container overflow-hidden overflow-x-auto gap-20'>

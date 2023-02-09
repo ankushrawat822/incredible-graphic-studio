@@ -118,12 +118,13 @@ box-shadow: 0px 4px 13px 7px rgba(0, 0, 0, 0.25);
 }
 
 .services-card-heading{
-  color: white;
-  text-shadow:
+  color: rgb(0, 0, 0);
+  /* text-shadow:
    -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px 1px 0 #000,
-     1px 1px 0 #000;
+     1px 1px 0 #000; */
+     font-weight: bold;
 }
 
 
@@ -162,7 +163,7 @@ box-shadow: -28px 56px 23px 66px rgba(0, 0, 0, 0.25);
 
 
 .footer-ul li{
-  padding: 10px 0px;
+  padding: 8px 0px;
   font-size: 23px;
 }
 
@@ -230,13 +231,17 @@ transform: translateX(10%);
 }
 
 
-@media only screen and (min-width: 600px) {
- 
-} */
+ */
 
 
 @media only screen and (max-width: 1180px) {
     .gallery-mid-img{
       display: none !important;
     }
+}
+
+@media only screen and (max-width: 600px) {
+   /* .footer-ul{
+    align-items: start;
+   } */
 }

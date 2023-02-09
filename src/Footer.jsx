@@ -61,10 +61,10 @@ const Footer = () => {
       {/* main div */}
       <div id="ContactRef" className='flex flex-col mt-[-100px] flex-wrap md:flex-row items-center justify-start md:items-start md:justify-evenly footer-box-shadow p-5 sm:items-center sm:justify-center pt-[24px]'>
         {/* div 1 */}
-        <div className='lg:w-[280px] lg:mr-32 py-5  flex flex-col items-center justify-start sm:items-center sm:justify-center md:items-start md:justify-start sm:gap-2 md:gap-1'>
+        <div className='lg:w-[290px] lg:mr-32 py-5  flex flex-col items-center justify-start sm:items-center sm:justify-center md:items-start md:justify-start sm:gap-2 md:gap-2'>
           <img className='w-[173px] h-[47px] md:ml-[-31px]' src={logo} alt="" />
-          <h1 className='font-bold text-[21px] md:text-[25px] lg:text-[25px]'>INCREDIBLE GRAPHIX STUDIO</h1>
-          <p className='text-[22px]'>Be Incredible!</p>
+          <h1 className='font-bold text-[20px] md:text-[19px] lg:text-[20px] py-2'>INCREDIBLE GRAPHIX STUDIO</h1>
+          <p className='text-[19px]'>Be Incredible!</p>
           <div className='home-hero-red-line mb-2'></div>
           <p>Graphic Design Service Based Company</p>
 
@@ -80,11 +80,11 @@ const Footer = () => {
 
         </div>
         {/* div 2 */}
-        <div className='lg:w-[280px] flex flex-col items-center justify-start sm:items-center sm:justify-center md:items-start md:justify-start'>
+        <div className='lg:w-[280px] flex flex-col items-center justify-start sm:items-center sm:justify-center md:items-start md:justify-start py-10 sm:py-0'>
           <p className='text-[22px]'>Company</p>
           <div className='footer-company-red-line mb-2'></div>
 
-          <ul className='footer-ul pb-5 flex flex-col gap-2'>
+          <ul className='footer-ul pb-5 flex flex-col gap-2 items-center sm:items-start sm:justify-start'>
             <li className='cursor-pointer' onClick={scrollToGallery}>Gallery</li>
             <li className='cursor-pointer' onClick={scrollToServices}>Services</li>
             <li className='cursor-pointer' onClick={scrollToContact}>Contact Us</li>
@@ -93,17 +93,17 @@ const Footer = () => {
 
         </div>
         {/* div 3 */}
-        <div className='lg:w-[380px] flex flex-col items-center sm:items-start justify-center'>
+        <div className='lg:w-[380px] flex flex-col items-center md:items-start sm:items-start justify-center'>
           <p className='text-[22px]'>Get in Touch with Us!</p>
           <div className='footer-form-red-line mb-5'></div>
 
           {/* input fields */}
           <div className='flex flex-col sm:flex-row items-center justify-center gap-4'>
-            <input className='input-field' placeholder='Full Name' type="text" />
-            <input className='input-field' placeholder='Email' type="email" />
+            <input className='input-field w-[80vw] sm:w-[190px]' placeholder='Full Name' type="text" />
+            <input className='input-field w-[80vw] sm:w-[190px]' placeholder='Email' type="email" />
           </div>
-          <textarea className='input-field w-[300px] py-3 my-3 h-[80px] sm:w-[400px] sm:h-[60px]' placeholder='Description' type="text" />
-          <select className='input-field w-[300px] py-3  h-[38px] sm:w-[400px]' >
+          <textarea className='input-field w-[80vw] py-3 my-3 h-[80px] sm:w-[400px] sm:h-[60px]' placeholder='Description' type="text" />
+          <select className='input-field w-[80vw] py-3  h-[38px] sm:w-[400px]' >
             <option value="volvo">Volvo</option>
             <option value="saab">Saab</option>
             <option value="fiat" selected>Loga Design</option>
@@ -124,10 +124,10 @@ const Footer = () => {
       </div>
 
 
-      {/* <div className='w-screen bg-white text-center flex flex-col items-center justify-center sm:flex-row  sm:justify-between py-10'>
+      <div className='w-screen bg-white text-center flex flex-col items-center justify-center sm:flex-row  sm:justify-center  py-10'>
 
-         <p className='text-center'>Copyright &#169; 2023  Incredible Graphix Studio. </p>
-      </div> */}
+         <p className='text-center sm:mr-[5rem]'>Copyright &#169; 2023  Incredible Graphix Studio. </p>
+      </div>
   
 
 
