@@ -1,7 +1,5 @@
 import React , {useState , useEffect , useRef} from 'react'
-import GalleryPizzaImg from './assets/gallery-pizza-img.svg'
-import LeftBtn from './assets/services-left-btn-img.svg'
-import RightBtn from './assets/services-right-btn-img.svg'
+
 
 
 const Services = () => {
@@ -40,7 +38,7 @@ const Services = () => {
         {
             key : 1,
             title: " Design",
-            img: "./servicees-logo-img.svg",
+            img: "./servicees-logo-img.jpg",
             content : <> <li>High Quality Creative</li>
             <li>Get in PNG/JPEG and PDF Format</li>
             <li>Unlimited Revisions</li>
@@ -51,7 +49,7 @@ const Services = () => {
         {
             key : 2,
             title: " Design",
-            img: "./servicees-logo-img.svg",
+            img: "./servicees-logo-img.jpg",
             content : <> <li>High Quality Creative</li>
             <li>Get in PNG/JPEG and PDF Format</li>
             <li>Unlimited Revisions</li>
@@ -62,7 +60,7 @@ const Services = () => {
         {
             key : 3,
             title: " Design",
-            img: "./servicees-logo-img.svg",
+            img: "./servicees-logo-img.jpg",
             content : <> <li>High Quality Creative</li>
             <li>Get in PNG/JPEG and PDF Format</li>
             <li>Unlimited Revisions</li>
@@ -74,7 +72,7 @@ const Services = () => {
         {
             key : 4,
             title: " Design",
-            img: "./servicees-logo-img.svg",
+            img: "./servicees-logo-img.jpg",
             content : <> <li>High Quality Creative</li>
             <li>Get in PNG/JPEG and PDF Format</li>
             <li>Unlimited Revisions</li>
@@ -85,7 +83,7 @@ const Services = () => {
         {
             key : 5,
             title: " Design",
-            img: "./servicees-logo-img.svg",
+            img: "./servicees-logo-img.jpg",
             content : <> <li>High Quality Creative</li>
             <li>Get in PNG/JPEG and PDF Format</li>
             <li>Unlimited Revisions</li>
@@ -96,7 +94,7 @@ const Services = () => {
         {
             key : 6,
             title: " Design",
-            img: "./servicees-logo-img.svg",
+            img: "./servicees-logo-img.jpg",
             content : <> <li>High Quality Creative</li>
             <li>Get in PNG/JPEG and PDF Format</li>
             <li>Unlimited Revisions</li>
@@ -107,7 +105,7 @@ const Services = () => {
         {
             key : 7,
             title: " Design",
-            img: "./servicees-logo-img.svg",
+            img: "./servicees-logo-img.jpg",
             content : <> <li>High Quality Creative</li>
             <li>Get in PNG/JPEG and PDF Format</li>
             <li>Unlimited Revisions</li>

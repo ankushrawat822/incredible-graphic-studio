@@ -1,9 +1,9 @@
 import React , {useRef} from 'react'
 
 import GalleryImg1 from './assets/gallery-img1.svg'
-import GalleryCenterImg from './assets/gallery-center-img.svg'
-import GalleryPizzaImg from './assets/gallery-pizza-img.svg'
-import GalleryJuiceImg from './assets/gallery-juice.svg'
+import GalleryCenterImg from './assets/gallery-center-img.jpg'
+import GalleryPizzaImg from './assets/gallery-pizza-img.jpg'
+import GalleryJuiceImg from './assets/gallery-juice.jpg'
 import GalleryTremeImg from './assets/gallery-treme.jpg'
 
 const Gallery = () => {
@@ -27,8 +27,8 @@ const Gallery = () => {
                   <img  className='rounded-[8px]  sm:w-[356px] sm:h-[295px] gallery-red-img-hover' src={GalleryPizzaImg} alt="" />
                </div>
                {/* div 2 */}
-               <div className='hidden md:flex gallery-mid-img'>
-                  <img className='rounded-[8px] gallery-img-hover'  src={GalleryCenterImg} alt="" />
+               <div className='hidden md:flex gallery-mid-img w-[358px] h-[638px]'>
+                  <img className='rounded-[8px] gallery-img-hover '  src={GalleryCenterImg} alt="" />
                </div>
                {/* div 3 */}
                <div className='flex flex-row sm:flex-col items-center justify-center flex-wrap gap-5 lg:gap-10'>

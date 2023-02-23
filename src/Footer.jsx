@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState}from 'react'
 import logo from './assets/logo.svg'
 import instaImg from './assets/footer-insta.svg';
 import whatsappImg from './assets/footer-whatsapp.svg'
@@ -9,11 +9,39 @@ import * as Scroll from 'react-scroll'
 import linkedin from './assets/footer-linkdin.svg'
 
 const Footer = () => {
+
+  // input field states
+
+  const [ fullName, setFullName ] = useState("")
+  const [ Email, setEmail ] = useState("")
+  const [ discription, setDiscription ] = useState("")
+
+
+ const handleFullNameChange=(e)=>{
+  setFullName(e.target.value)
+  } 
+
+  const handleEmailChange=(e)=>{
+    setEmail(e.target.value)
+    } 
+
+
+    const handleDiscriptionChange=(e)=>{
+      setDiscription(e.target.value)
+      } 
+  
+
   // submit btn
   const handleSubmitBtn = ()=>{
-    alert("form submitted")
+    alert("Currently We are not receiving this Form Please Contact Us through Google Form")
   }
 
+  // clear btn
+  const handleClearAllBtn =()=>{
+    setFullName("")
+    setEmail("")
+    setDiscription("")
+  }
 
   // scroll into starts
 
@@ -99,19 +127,20 @@ const Footer = () => {
 
           {/* input fields */}
           <div className='flex flex-col sm:flex-row items-center justify-center gap-4'>
-            <input className='input-field w-[80vw] sm:w-[190px]' placeholder='Full Name' type="text" />
-            <input className='input-field w-[80vw] sm:w-[190px]' placeholder='Email' type="email" />
+            <input value={fullName} onChange={handleFullNameChange} className='input-field w-[80vw] sm:w-[190px]' placeholder='Full Name' type="text" />
+            <input value={Email} onChange={handleEmailChange} className='input-field w-[80vw] sm:w-[190px]' placeholder='Email' type="email" />
           </div>
-          <textarea className='input-field w-[80vw] py-3 my-3 h-[80px] sm:w-[400px] sm:h-[60px]' placeholder='Description' type="text" />
+          <textarea value={discription} onChange={handleDiscriptionChange} className='input-field w-[80vw] py-3 my-3 h-[80px] sm:w-[400px] sm:h-[60px]' placeholder='Description' type="text" />
           <select className='input-field w-[80vw] py-3  h-[38px] sm:w-[400px]' >
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat" selected>Loga Design</option>
-            <option value="audi">Audi</option>
+            <option value="volvo">Graphic Design</option>
+            <option value="saab">Artwork </option>
+            <option value="fiat" selected>Logo Design</option>
+            <option value="fiat" selected>Other</option>
+          
           </select>
 
           <div className='flex flex-col sm:flex-row items-center justify-center gap-2 mt-3 mb-[20px] md:mb-0'>
-            <button className=' flex items-center justify-center footer-clear-btn text-[20px] w-[80vw] sm:w-[225px]'>Clear All</button>
+            <button className=' flex items-center justify-center footer-clear-btn text-[20px] w-[80vw] sm:w-[225px]' onClick={handleClearAllBtn}>Clear All</button>
             <button onClick={handleSubmitBtn} className=' flex items-center justify-center footer-submil-btn text-[20px] w-[80vw] sm:w-[165px]'>Submit</button>
           </div>
 
